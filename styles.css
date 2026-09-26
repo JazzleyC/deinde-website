@@ -19,3 +19,16 @@
 .site-header{flex-wrap:wrap}
 .site-header nav{flex-wrap:wrap}
 .site-header nav a{white-space:nowrap}
+
+/* The opening of the brand uses a dictionary entry as its visual signature. */
+.word-entry{max-width:570px;padding:25px 28px 23px;background:var(--mist);color:var(--forest);border:1px solid #ffffff75;border-radius:4px;box-shadow:0 12px 34px #001e2520}
+.word-entry .entry-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px 16px;font-size:.82rem;font-weight:600;letter-spacing:.02em;color:var(--green)}
+.word-entry .entry-meta span{font-size:.72rem;font-weight:500;letter-spacing:.04em;color:var(--muted)}
+.word-entry h1{margin:5px 0 13px;font-family:Georgia,"Iowan Old Style",serif;font-size:clamp(3.7rem,6.6vw,5rem);font-weight:400;line-height:.98;letter-spacing:-.055em;color:var(--forest)}
+.word-entry ol{display:grid;gap:10px;list-style:none;margin:0;padding:14px 0 0;border-top:1px solid var(--line);font-size:.96rem;line-height:1.55}
+.word-entry li{display:grid;grid-template-columns:22px 1fr;gap:8px}
+.entry-number{font-family:Georgia,"Iowan Old Style",serif;font-weight:600;color:var(--green)}
+.word-entry strong{font-weight:700;color:var(--forest)}
+.hero .word-entry+.hero-description{margin-top:25px}
+@media(max-width:720px){.word-entry{padding:20px 21px}.word-entry h1{font-size:4rem}.word-entry ol{font-size:.94rem}}
+@media(max-width:360px){.word-entry{padding:18px}.word-entry h1{font-size:3.55rem}.word-entry .entry-meta{gap:4px 11px}.word-entry ol{font-size:.88rem}}
